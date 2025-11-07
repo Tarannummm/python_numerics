@@ -27,9 +27,22 @@
 
 
 
-x = 10
-if x > 0:
-    if x % 2 == 0:
-        print("Positive Even")
-    else:
-        print("Positive Odd")
+# x = 10
+# if x > 0:
+#     if x % 2 == 0:
+#         print("Positive Even")
+#     else:
+#         print("Positive Odd")
+
+
+
+a = 5
+b = 10
+c = 7
+if a > b and a > c:
+    print("A is largest")
+elif b > c:
+    print("B is largest")
+else:
+    print("C is largest")
+
