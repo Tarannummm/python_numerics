@@ -36,13 +36,15 @@
 
 
 
-a = 5
-b = 10
-c = 7
-if a > b and a > c:
-    print("A is largest")
-elif b > c:
-    print("B is largest")
-else:
-    print("C is largest")
+# a = 5
+# b = 10
+# c = 7
+# if a > b and a > c:
+#     print("A is largest")
+# elif b > c:
+#     print("B is largest")
+# else:
+#     print("C is largest")
 
+cube = lambda x: x**3
+print(cube(3))
