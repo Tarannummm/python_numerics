@@ -46,5 +46,11 @@
 # else:
 #     print("C is largest")
 
-cube = lambda x: x**3
-print(cube(3))
+# cube = lambda x: x**3
+# print(cube(3))
+
+import matplotlib.pyplot as plt   
+
+x=[1,2,3]
+plt.plot(x)
+plt.show()
