@@ -49,8 +49,14 @@
 # cube = lambda x: x**3
 # print(cube(3))
 
-import matplotlib.pyplot as plt   
+# import matplotlib.pyplot as plt   
 
-x=[1,2,3]
-plt.plot(x)
-plt.show()
+# x=[1,2,3]
+# plt.plot(x)
+# plt.show()
+
+
+for i in range(1, 6):
+    if i == 3:
+        continue
+    print(i)
