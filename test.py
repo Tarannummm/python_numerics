@@ -56,7 +56,32 @@
 # plt.show()
 
 
-for i in range(1, 6):
-    if i == 3:
-        continue
-    print(i)
+# for i in range(1, 6):
+#     if i == 3:
+#         continue
+#     print(i)
+
+
+
+import matplotlib.pyplot as plt
+
+solX = []   # will store values of x
+solY = []   # will store values of y
+
+# Suppose we calculate x and y in a loop
+for i in range(10):
+    x = i        # some example value
+    y = i*i      # y = i² (example)
+    
+    solX.append(x)
+    solY.append(y)
+
+# Plotting the results
+plt.plot(solX, label='X values')   # plot solX
+plt.plot(solY, label='Y values')   # plot solY
+
+plt.xlabel('Iteration')            # x-axis name
+plt.ylabel('Solution')             # y-axis name
+
+plt.legend()                       # show legend box
+plt.show()                         # show the final graph
