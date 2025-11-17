@@ -63,25 +63,33 @@
 
 
 
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
-solX = []   # will store values of x
-solY = []   # will store values of y
+# solX = []   # will store values of x
+# solY = []   # will store values of y
 
-# Suppose we calculate x and y in a loop
-for i in range(10):
-    x = i        # some example value
-    y = i*i      # y = i² (example)
+# # Suppose we calculate x and y in a loop
+# for i in range(10):
+#     x = i        # some example value
+#     y = i*i      # y = i² (example)
     
-    solX.append(x)
-    solY.append(y)
+#     solX.append(x)
+#     solY.append(y)
 
-# Plotting the results
-plt.plot(solX, label='X values')   # plot solX
-plt.plot(solY, label='Y values')   # plot solY
+# # Plotting the results
+# plt.plot(solX, label='X values')   # plot solX
+# plt.plot(solY, label='Y values')   # plot solY
 
-plt.xlabel('Iteration')            # x-axis name
-plt.ylabel('Solution')             # y-axis name
+# plt.xlabel('Iteration')            # x-axis name
+# plt.ylabel('Solution')             # y-axis name
 
-plt.legend()                       # show legend box
-plt.show()                         # show the final graph
+# plt.legend()                       # show legend box
+# plt.show()                         # show the final graph
+
+student = {
+    "name": "Tarannum",
+    "age": 20,
+    "dept": "CSE"
+}
+
+print(student["name"])
