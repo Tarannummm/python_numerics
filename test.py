@@ -86,10 +86,20 @@
 # plt.legend()                       # show legend box
 # plt.show()                         # show the final graph
 
-student = {
-    "name": "Tarannum",
-    "age": 20,
-    "dept": "CSE"
-}
+# student = {
+#     "name": "Tarannum",
+#     "age": 20,
+#     "dept": "CSE"
+# }
 
-print(student["name"])
+# print(student["name"])
+
+
+a = [2, 3, 2, 5, 3, 7, 7]
+
+unique = []
+for i in a:
+    if i not in unique:
+        unique.append(i)
+
+print(unique)
