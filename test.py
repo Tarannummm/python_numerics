@@ -95,11 +95,25 @@
 # print(student["name"])
 
 
-a = [2, 3, 2, 5, 3, 7, 7]
+# a = [2, 3, 2, 5, 3, 7, 7]
 
-unique = []
-for i in a:
-    if i not in unique:
-        unique.append(i)
+# unique = []
+# for i in a:
+#     if i not in unique:
+#         unique.append(i)
 
-print(unique)
+# print(unique)
+
+
+num = 29
+flag = True
+
+for i in range(2, num):
+    if num % i == 0:
+        flag = False
+        break
+
+if flag:
+    print("Prime")
+else:
+    print("Not Prime")
