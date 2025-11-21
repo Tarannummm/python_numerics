@@ -105,15 +105,25 @@
 # print(unique)
 
 
-num = 29
-flag = True
+# num = 29
+# flag = True
 
-for i in range(2, num):
-    if num % i == 0:
-        flag = False
-        break
+# for i in range(2, num):
+#     if num % i == 0:
+#         flag = False
+#         break
 
-if flag:
-    print("Prime")
-else:
-    print("Not Prime")
+# if flag:
+#     print("Prime")
+# else:
+#     print("Not Prime")
+
+
+nums = [5, 3, 8, 1, 2]
+
+for i in range(len(nums)):
+    for j in range(i+1, len(nums)):
+        if nums[i] > nums[j]:
+            nums[i], nums[j] = nums[j], nums[i]
+
+print(nums)
