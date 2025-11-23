@@ -119,11 +119,32 @@
 #     print("Not Prime")
 
 
-nums = [5, 3, 8, 1, 2]
+# nums = [5, 3, 8, 1, 2]
 
-for i in range(len(nums)):
-    for j in range(i+1, len(nums)):
-        if nums[i] > nums[j]:
-            nums[i], nums[j] = nums[j], nums[i]
+# for i in range(len(nums)):
+#     for j in range(i+1, len(nums)):
+#         if nums[i] > nums[j]:
+#             nums[i], nums[j] = nums[j], nums[i]
 
-print(nums)
+# print(nums)
+
+
+nums = [2, 5, 7, 10, 15, 20, 25]
+target = 15
+
+low = 0
+high = len(nums) - 1
+found = False
+
+while low <= high:
+    mid = (low + high) // 2
+
+    if nums[mid] == target:
+        found = True
+        break
+    elif nums[mid] < target:
+        low = mid + 1
+    else:
+        high = mid - 1
+
+print("Found?" , found)
