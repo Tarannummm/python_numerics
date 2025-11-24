@@ -129,22 +129,36 @@
 # print(nums)
 
 
-nums = [2, 5, 7, 10, 15, 20, 25]
-target = 15
+# nums = [2, 5, 7, 10, 15, 20, 25]
+# target = 15
 
-low = 0
-high = len(nums) - 1
-found = False
+# low = 0
+# high = len(nums) - 1
+# found = False
 
-while low <= high:
-    mid = (low + high) // 2
+# while low <= high:
+#     mid = (low + high) // 2
 
-    if nums[mid] == target:
-        found = True
-        break
-    elif nums[mid] < target:
-        low = mid + 1
-    else:
-        high = mid - 1
+#     if nums[mid] == target:
+#         found = True
+#         break
+#     elif nums[mid] < target:
+#         low = mid + 1
+#     else:
+#         high = mid - 1
 
-print("Found?" , found)
+# print("Found?" , found)
+
+
+n = 5
+
+for i in range(1, n+1):
+    # spaces
+    for s in range(n-i):
+        print(" ", end="")
+    
+    # numbers
+    for j in range(1, i+1):
+        print(j, end=" ")
+
+    print()
