@@ -150,15 +150,27 @@
 # print("Found?" , found)
 
 
-n = 5
+# n = 5
 
-for i in range(1, n+1):
-    # spaces
-    for s in range(n-i):
-        print(" ", end="")
+# for i in range(1, n+1):
+#     # spaces
+#     for s in range(n-i):
+#         print(" ", end="")
     
-    # numbers
-    for j in range(1, i+1):
-        print(j, end=" ")
+#     # numbers
+#     for j in range(1, i+1):
+#         print(j, end=" ")
 
-    print()
+#     print()
+
+
+for num in range(2, 51):
+    prime = True
+    
+    for i in range(2, num):
+        if num % i == 0:
+            prime = False
+            break
+
+    if prime:
+        print(num, end=" ")
