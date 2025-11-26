@@ -122,23 +122,33 @@
 #     x0=x1
     
 #fixed point
-import math
-import matplotlib.pyplot as plt
+# import math
+# import matplotlib.pyplot as plt
 
-root = []
-errors = []
-g = lambda x: math.exp(-x)
-x0 = 0
+# root = []
+# errors = []
+# g = lambda x: math.exp(-x)
+# x0 = 0
 
-for i in range(15):
-    x1 = g(x0)
-    root.append(x1)
-    error = abs(x1 - x0)
-    errors.append(error)
-    x0 = x1
+# for i in range(15):
+#     x1 = g(x0)
+#     root.append(x1)
+#     error = abs(x1 - x0)
+#     errors.append(error)
+#     x0 = x1
 
-plt.plot(root, label='Root')
-plt.plot(errors, label='Error')
-plt.legend()
-plt.show()
+# plt.plot(root, label='Root')
+# plt.plot(errors, label='Error')
+# plt.legend()
+# plt.show()
               
+x = [1, 2, 3, 4]
+y = [5, 6, 7, 8]
+
+n = len(x)
+xx = 2.5
+
+for i in range(n - 1):
+    if (xx >= x[i]) and (xx <= x[i + 1]):
+        S = y[i] + (y[i + 1] - y[i]) * (xx - x[i]) / (x[i + 1] - x[i])
+        print("Interpolated value:", S)
