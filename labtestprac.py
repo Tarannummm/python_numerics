@@ -105,20 +105,40 @@
 
 # 0.00001 starting from x0​=1.
 
-import math 
-import matplotlib.pyplot as plt
-f=lambda x:5*math.exp(x)-6
-df=lambda x:5*math.exp(x)
-x0=1
-tol=0.0001
-for i in range(1,6):
-    x1=x0-(f(x0)/df(x0))
-    x0=x1
-err=1
-while err>tol:
-    x1=x0-(f(x0)/df(x0))
-    err=abs(x1-x0)
-    print(x1)
-    x0=x1
+# import math 
+# import matplotlib.pyplot as plt
+# f=lambda x:5*math.exp(x)-6
+# df=lambda x:5*math.exp(x)
+# x0=1
+# tol=0.0001
+# for i in range(1,6):
+#     x1=x0-(f(x0)/df(x0))
+#     x0=x1
+# err=1
+# while err>tol:
+#     x1=x0-(f(x0)/df(x0))
+#     err=abs(x1-x0)
+#     print(x1)
+#     x0=x1
     
+#fixed point
+import math
+import matplotlib.pyplot as plt
+
+root = []
+errors = []
+g = lambda x: math.exp(-x)
+x0 = 0
+
+for i in range(15):
+    x1 = g(x0)
+    root.append(x1)
+    error = abs(x1 - x0)
+    errors.append(error)
+    x0 = x1
+
+plt.plot(root, label='Root')
+plt.plot(errors, label='Error')
+plt.legend()
+plt.show()
               
