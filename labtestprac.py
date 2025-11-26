@@ -80,21 +80,45 @@
 
 # At each iteration, print the approximate root and the error.
 
+# import math 
+# import matplotlib.pyplot as plt
+# f=lambda x:x**3-4*x-9
+# a=2
+# b=3
+# r=2.708375
+# tol=0.0001
+# for i in range(1,101):
+#     c=(a*f(b)-b*f(a))/(f(b)-f(a))
+#     err=abs(c-r)
+#     print(c)
+#     if err<tol:
+#         break
+#     if f(c)>0:
+#         b=c
+#     else:
+#         a=c
+          
+
+# Use the Newton-Raphson method to find the root of 
+
+# f(x)=5ex−6 with a tolerance of 
+
+# 0.00001 starting from x0​=1.
+
 import math 
 import matplotlib.pyplot as plt
-f=lambda x:x**3-4*x-9
-a=2
-b=3
-r=2.708375
+f=lambda x:5*math.exp(x)-6
+df=lambda x:5*math.exp(x)
+x0=1
 tol=0.0001
-for i in range(1,101):
-    c=(a*f(b)-b*f(a))/(f(b)-f(a))
-    err=abs(c-r)
-    print(c)
-    if err<tol:
-        break
-    if f(c)>0:
-        b=c
-    else:
-        a=c
-          
+for i in range(1,6):
+    x1=x0-(f(x0)/df(x0))
+    x0=x1
+err=1
+while err>tol:
+    x1=x0-(f(x0)/df(x0))
+    err=abs(x1-x0)
+    print(x1)
+    x0=x1
+    
+              
