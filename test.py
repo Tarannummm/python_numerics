@@ -164,13 +164,28 @@
 #     print()
 
 
-for num in range(2, 51):
-    prime = True
+# for num in range(2, 51):
+#     prime = True
     
-    for i in range(2, num):
-        if num % i == 0:
-            prime = False
-            break
+#     for i in range(2, num):
+#         if num % i == 0:
+#             prime = False
+#             break
 
-    if prime:
-        print(num, end=" ")
+#     if prime:
+#         print(num, end=" ")
+
+
+arr = [9, 5, 1, 4, 3]
+
+for i in range(1, len(arr)):
+    key = arr[i]
+    j = i - 1
+    
+    while j >= 0 and arr[j] > key:
+        arr[j + 1] = arr[j]
+        j -= 1
+
+    arr[j + 1] = key
+
+print(arr)

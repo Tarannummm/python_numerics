@@ -32,8 +32,6 @@
 
 
 
-
-
 import math 
 f = lambda x:math.exp(-x)-x
 a=0

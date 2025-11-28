@@ -155,17 +155,17 @@
 
 
 
-
-x=[1,2,3]
-y=[4,5,6]
-xx=3
-n=len(x)
-L=0
-for i in range(n):
-    li=1
-    for j in range(n):
-        if (i!=j):
-            li *=(xx-x[j])/x[i]-x[j]
-    L +=y[i]*li
-    print(L)
+#lagrange
+# x=[1,2,3]
+# y=[4,5,6]
+# xx=3
+# n=len(x)
+# L=0
+# for i in range(n):
+#     li=1
+#     for j in range(n):
+#         if (i!=j):
+#             li *=(xx-x[j])/x[i]-x[j]
+#     L +=y[i]*li
+#     print(L)
 
