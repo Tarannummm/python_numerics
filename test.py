@@ -255,15 +255,28 @@
 
 #queue
 
-queue = []
+# queue = []
 
-# enqueue
-queue.append(10)
-queue.append(20)
-queue.append(30)
+# # enqueue
+# queue.append(10)
+# queue.append(20)
+# queue.append(30)
 
-# dequeue
-print(queue.pop(0))
-print(queue.pop(0))
+# # dequeue
+# print(queue.pop(0))
+# print(queue.pop(0))
 
-print("Final Queue:", queue)
+# print("Final Queue:", queue)
+
+
+#largest word
+text = "Python is the best programming language"
+words = text.split()
+
+largest = words[0]
+
+for w in words:
+    if len(w) > len(largest):
+        largest = w
+
+print("Largest word:", largest)
