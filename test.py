@@ -270,13 +270,24 @@
 
 
 #largest word
-text = "Python is the best programming language"
-words = text.split()
+# text = "Python is the best programming language"
+# words = text.split()
 
-largest = words[0]
+# largest = words[0]
 
-for w in words:
-    if len(w) > len(largest):
-        largest = w
+# for w in words:
+#     if len(w) > len(largest):
+#         largest = w
 
-print("Largest word:", largest)
+# print("Largest word:", largest)
+
+
+text = "Anika Tarannum"
+vowels = "aeiouAEIOU"
+result = ""
+
+for ch in text:
+    if ch not in vowels:
+        result += ch
+
+print(result)
