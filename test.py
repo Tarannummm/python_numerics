@@ -282,12 +282,21 @@
 # print("Largest word:", largest)
 
 
-text = "Anika Tarannum"
-vowels = "aeiouAEIOU"
+# text = "Anika Tarannum"
+# vowels = "aeiouAEIOU"
+# result = ""
+
+# for ch in text:
+#     if ch not in vowels:
+#         result += ch
+
+# print(result)
+
+s = "banana"
 result = ""
 
-for ch in text:
-    if ch not in vowels:
+for ch in s:
+    if ch not in result:
         result += ch
 
 print(result)
