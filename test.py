@@ -291,12 +291,20 @@
 #         result += ch
 
 # print(result)
+#remove duplicate
+# s = "banana"
+# result = ""
 
-s = "banana"
-result = ""
+# for ch in s:
+#     if ch not in result:
+#         result += ch
 
-for ch in s:
-    if ch not in result:
-        result += ch
+# print(result)
 
-print(result)
+#recursion fibonacci
+def fib(n):
+    if n <= 1:
+        return n
+    return fib(n-1) + fib(n-2)
+
+print(fib(10))
