@@ -302,9 +302,19 @@
 # print(result)
 
 #recursion fibonacci
-def fib(n):
-    if n <= 1:
-        return n
-    return fib(n-1) + fib(n-2)
+# def fib(n):
+#     if n <= 1:
+#         return n
+#     return fib(n-1) + fib(n-2)
 
-print(fib(10))
+# print(fib(10))
+
+
+#find the missing number
+nums = [1,2,3,4,5,6,8,9,10]
+n = 10
+
+expected = n * (n+1) // 2
+actual = sum(nums)
+
+print("Missing number:", expected - actual)
