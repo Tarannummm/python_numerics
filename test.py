@@ -311,10 +311,25 @@
 
 
 #find the missing number
-nums = [1,2,3,4,5,6,8,9,10]
-n = 10
+# nums = [1,2,3,4,5,6,8,9,10]
+# n = 10
 
-expected = n * (n+1) // 2
-actual = sum(nums)
+# expected = n * (n+1) // 2
+# actual = sum(nums)
 
-print("Missing number:", expected - actual)
+# print("Missing number:", expected - actual)
+
+
+#checking if two matrics are equal
+A = [[1,2],[3,4]]
+B = [[1,2],[3,4]]
+
+equal = True
+
+for i in range(len(A)):
+    for j in range(len(A[0])):
+        if A[i][j] != B[i][j]:
+            equal = False
+            break
+
+print("Equal" if equal else "Not Equal")
