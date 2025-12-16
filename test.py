@@ -321,15 +321,27 @@
 
 
 #checking if two matrics are equal
-A = [[1,2],[3,4]]
-B = [[1,2],[3,4]]
+# A = [[1,2],[3,4]]
+# B = [[1,2],[3,4]]
 
-equal = True
+# equal = True
 
-for i in range(len(A)):
-    for j in range(len(A[0])):
-        if A[i][j] != B[i][j]:
-            equal = False
-            break
+# for i in range(len(A)):
+#     for j in range(len(A[0])):
+#         if A[i][j] != B[i][j]:
+#             equal = False
+#             break
 
-print("Equal" if equal else "Not Equal")
+# print("Equal" if equal else "Not Equal")
+
+#
+s = "aabbccddeffg"
+freq = {}
+
+for ch in s:
+    freq[ch] = freq.get(ch, 0) + 1
+
+for ch in s:
+    if freq[ch] == 1:
+        print(ch)
+        break
