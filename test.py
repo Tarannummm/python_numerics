@@ -334,14 +334,21 @@
 
 # print("Equal" if equal else "Not Equal")
 
-#
-s = "aabbccddeffg"
-freq = {}
+#non repeating
+# s = "aabbccddeffg"
+# freq = {}
 
-for ch in s:
-    freq[ch] = freq.get(ch, 0) + 1
+# for ch in s:
+#     freq[ch] = freq.get(ch, 0) + 1
 
-for ch in s:
-    if freq[ch] == 1:
-        print(ch)
-        break
+# for ch in s:
+#     if freq[ch] == 1:
+#         print(ch)
+#         break
+
+n = 32
+
+if n > 0 and (n & (n-1)) == 0:
+    print("Power of Two")
+else:
+    print("Not Power of Two")
