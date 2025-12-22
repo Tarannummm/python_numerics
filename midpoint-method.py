@@ -8,7 +8,7 @@ n=int((xn-x0)/h)
 for i in range(n):
     k1=f(x0,y0)
     k2=f(x0+h,y0+k1*h/2)
-    y=y0+h/2*(k1+k2)
+    y=y0+h/2*(k1+k2) #or y=y0+h*k2
     y0=y
     x0=x0+h
     print("iter :%d x=%f y=%f"%(i+1,x0,y0))
