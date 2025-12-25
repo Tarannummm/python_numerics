@@ -10,3 +10,6 @@ for i in range(n):
     x0=x0+h
     y0=y
     print("iter %d x=%f y=%f"%(i,x0,y))
+
+
+
