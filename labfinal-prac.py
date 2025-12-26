@@ -31,3 +31,20 @@ for i in range(1,n):
         sum=sum+4*f(a)
 sum=sum*(h/3)
 print(sum)
+
+#simpson's 3/8
+f=lambda x:x**2+1
+a=0
+b=12
+n=6
+h=(b-a)/n
+sum=f(a)+f(b)
+for i in range(1,n):
+    a=a+h
+    if i%3==0:
+        sum=sum+2*f(a)
+    else:
+        sum=sum+3*f(a)
+sum=sum*3*(h/8)
+print(sum)
+ 
