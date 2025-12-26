@@ -9,7 +9,7 @@ sum = 0
 
 x0 = 0         
 
-for i in range(2):
+for i in range(2): #as here n=12 so the loop will run 2 times 
     x1 = x0 + h
     x2 = x1 + h
     x3 = x2 + h
