@@ -7,7 +7,7 @@ xn=0.1
 n=int((xn-x0)/h)
 for i in range(n):
     k1=f(x0,y0)
-    k2=f(x0+h,y0+k1+h)
+    k2=f(x0+h,y0+h*k1)
     y=y0+h/2*(k1+k2)
     y0=y
     x0=x0+h
