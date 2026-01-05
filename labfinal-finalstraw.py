@@ -23,3 +23,50 @@ for i in range(N):
 avg=sum/N
 I=(b-a)*avg
 print(I)
+
+#trapeziodal
+import math 
+f=lambda x:math.exp(x)
+a=0
+b=1
+n=4 #any n
+h=(b-a)/n
+sum=f(a)+f(b)
+for i in range(1-n):
+    a=a+h
+    sum=sum+2*f(a)
+sum=sum+(h/2)
+print(sum)
+
+#simpsons 1/3
+import math
+f=lambda x:math.exp(x)
+a=0
+b=1
+n=8 #n must be even
+h=(b-a)/n
+sum=f(a)+f(b)
+for i in range(1,n):
+    a=a+h
+    if i%2==0:
+        sum=sum+2*f(a)
+    else:
+        sum=sum+4*f(a)
+sum=sum*(h/3)
+print(sum)
+
+#simpsons 3/8
+import math
+f=lambda x:x**2-2
+a=0
+b=1
+n=15
+h=(b-a)/n
+for i in range(1,n):
+    a=a+h
+    if i%3==0:
+        sum=sum+2*f(a)
+    else:
+        sum=sum+3*f(a)
+sum=sum*(3*h)/8
+print("approximate integral: ",sum)
